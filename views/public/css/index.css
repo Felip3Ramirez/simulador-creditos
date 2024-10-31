@@ -10,6 +10,8 @@
 body {
     width: 100%;
     min-height: 100vh;
+    height: 100vh;
+    /* height: 650px; */
 
 }
 
@@ -24,7 +26,9 @@ body {
 
 .header__logo {
     width: 15%;
-    height: 100%;
+    height: 80%;
+    margin-left: 10px;
+    border-radius: 10px;
 
 }
 
@@ -71,4 +75,55 @@ body {
     width: 100%;
     transition: ease-in-out all 0.8s;
     background-color: #fe4e11;
+}
+
+.content {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/views/public/img/fondoCredito.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.content__form{
+    height: 40%;
+    width: 40%;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    box-shadow: 5px 5px 10px black;
+    position: relative;
+}
+
+.content__form button{
+    width: 40%;
+    height: 50px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+}
+.content__form button::before{
+    position: absolute;
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: 0;
+    left: 0;
+    top: 0;
+    transition: ease-in-out 0.6s;
+}
+.content__form button:hover::before{
+    
+    height: 100%;
+    transition: ease-in-out 0.6s;
+    background-color: #62c3f8;
 }

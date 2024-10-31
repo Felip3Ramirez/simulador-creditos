@@ -1,0 +1,2 @@
+Objetos literales 
+Objetos por constructor (Plantila inicia en mayuscula)
