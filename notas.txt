@@ -1,2 +1,24 @@
 Objetos literales 
 Objetos por constructor (Plantila inicia en mayuscula)
+
+Selector DOM:
+    En JavaScript, los selectores DOM son herramientas que permiten acceder y manipular elementos en el documento HTML. Los métodos más comunes incluyen getElementById, getElementsByClassName, getElementsByTagName, querySelector y querySelectorAll. Estos métodos utilizan diferentes tipos de selectores para localizar elementos en el DOM.
+
+Eventos:
+    Usuario:Toda accion que realiza un usuario sobre la aplicaion(click,doble click,scroll.etc)
+    Documento:Toda accion que se desencadena por un evento de usuario (todo lo que sucede por debajo del codigo)
+Para definir un evento  usamos el addevenlistener el cual necesita de dos argumentos: evento y la accion    
+
+getElementsByTagName y/o querySelectorAll ambos me retornan un listado de  elementos "arreglos"
+
+Arreglos: conjuntos de datos almacenados en una misma variable 
+    Tamaño-> Esta definido con la cantidad de elementos que contiene el arreglos
+    Posicion-> Esta definida por la cntidad de elementos -1
+Un arreglo en JavaScript puede almacenar  cualquier tipo de dato, incluso otros arreglos, numeros, texto, booleanos,  objetos, etc.
+
+Tarea:Metodos de arreglos ,map, find, filter, some, foreach, push, pop, slice,
+
+Modulos:
+    Export e import
+
+    
