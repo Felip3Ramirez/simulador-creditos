@@ -27,7 +27,10 @@
 // console.log(formularioLogin);
 
 
-import { expresionesRegulares } from "../../../helpers/expresiones";
+import { expresionesRegulares } from "../../../helpers/expresiones.js";
+
+// console.log(expresionesRegulares);
+
 
 document
     .getElementById("btnFormRegister")
@@ -49,7 +52,15 @@ function validarFormulario(e) {
     // console.log(e.target.name);
     switch (e.target.name) {
         case "register-nombre":
-            console.log("Este es el input de register usuario ");
+        if (expresionesRegulares.nombre.test(e.target.value)) {
+            console.log("Paso la validacion");
+        } else {
+            console.log("El campo solo permite letras en mayuscula");
+            
+        }
+
+
+            // console.log("Este es el input de register usuario ");
             break;
         default:
             break;
