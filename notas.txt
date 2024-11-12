@@ -16,7 +16,7 @@ Arreglos: conjuntos de datos almacenados en una misma variable
     Posicion-> Esta definida por la cntidad de elementos -1
 Un arreglo en JavaScript puede almacenar  cualquier tipo de dato, incluso otros arreglos, numeros, texto, booleanos,  objetos, etc.
 
-Tarea:Metodos de arreglos ,map, find, filter, some, foreach, push, pop, slice,
+Tarea:Metodos de arreglos ,map, find, filter, some, foreach, push, pop, slice,  "shift y unshift"
 
 Modulos:
     Export e import

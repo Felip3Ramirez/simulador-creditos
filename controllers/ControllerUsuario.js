@@ -19,6 +19,8 @@ export function register() {
         confirmar: registroConfirmar
     };
     console.log(newRegistro);
+
+    usuarios.push(newRegistro);
     
     
 }
