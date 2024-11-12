@@ -1,0 +1,6 @@
+jueves 5 de diciembre
+migrecion del proyecto de introduccion a proyecto web
+1.Implementacion de javaScript a los formularios
+2.manipulacion del DOM segun la informacion que tengan
+3.Implementacion de expresion regulares
+4.Implementacion del MVC (aplicando modulos:import y Export)
