@@ -2,6 +2,7 @@ import { usuarios } from "../models/ModelUsuario.js";
 
 export function login() {
     console.log(usuarios);
+    usuarios.some();
     
 }
 
@@ -18,9 +19,13 @@ export function register() {
         contrasena: registroContraseña,
         confirmar: registroConfirmar
     };
-    console.log(newRegistro);
-
-    usuarios.push(newRegistro);
+    // usuarios.push(newRegistro);
+    usuarios.unshift(newRegistro);
+    document.getElementById("form-register").style.display="none"
+    document.getElementById("form-login").style.display= "flex"
+    // console.log(newRegistro);
+    console.log(usuarios);
+    
     
     
 }

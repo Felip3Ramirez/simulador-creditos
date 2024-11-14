@@ -56,9 +56,9 @@ button[type="button"]{
     border: solid  2px #462ae7;
 
 }
-.correcto{
-    outline: solid 2px green;
-}
 .incorrecto{
     outline: solid 2px red;
+}
+.correcto{
+    outline: solid 2px green;
 }
