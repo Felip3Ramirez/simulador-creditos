@@ -130,3 +130,101 @@ pop(): elimina el último elemento del arreglo.
 slice(): obtiene una porción del arreglo.
 Estos métodos son muy útiles para manipular y trabajar con arreglos en JavaScript. Puedes combinarlos para realizar operaciones más complejas según tus necesidades. ¡Espero que esta información te sea útil para tu estudio!
     
+
+    Ejercicio 1: Uso de shift()
+Crea un programa que realice lo siguiente:
+
+Declara un array con al menos 5 nombres.
+Usa el método shift() para eliminar el primer nombre del array.
+Imprime el nombre eliminado y el array resultante.
+javascript
+
+Verify
+Edit
+Copy code
+// Tu código aquí
+let nombres = ["Juan", "María", "Pedro", "Ana", "Luis"];
+let primerNombre = nombres.shift();
+console.log("Nombre eliminado:", primerNombre);
+console.log("Array resultante:", nombres);
+Ejercicio 2: Uso de unshift()
+Crea un programa que realice lo siguiente:
+
+Declara un array vacío.
+Usa el método unshift() para agregar al menos 3 frutas al principio del array.
+Imprime el array resultante.
+javascript
+
+Verify
+Edit
+Copy code
+// Tu código aquí
+let frutas = [];
+frutas.unshift("Manzana");
+frutas.unshift("Banana");
+frutas.unshift("Naranja");
+console.log("Array de frutas:", frutas);
+Ejercicio 3: Combinando shift() y unshift()
+Crea un programa que realice lo siguiente:
+
+Declara un array con 4 números.
+Usa shift() para eliminar el primer número.
+Usa unshift() para agregar un nuevo número al principio del array.
+Imprime el número eliminado y el array final.
+javascript
+
+Verify
+Edit
+Copy code
+// Tu código aquí
+let numeros = [1, 2, 3, 4];
+let primerNumero = numeros.shift();
+numeros.unshift(0);
+console.log("Número eliminado:", primerNumero);
+console.log("Array final:", numeros);
+Ejercicio 4: Manipulación de un array de objetos
+Crea un programa que realice lo siguiente:
+
+Declara un array de objetos que representen estudiantes, cada uno con un nombre y una edad.
+Usa shift() para eliminar el primer estudiante.
+Usa unshift() para agregar un nuevo estudiante al principio del array.
+Imprime el estudiante eliminado y el array de estudiantes resultante.
+javascript
+
+Verify
+Edit
+Copy code
+// Tu código aquí
+let estudiantes = [
+    { nombre: "Carlos", edad: 20 },
+    { nombre: "Laura", edad: 22 },
+    { nombre: "Miguel", edad: 21 }
+];
+
+let estudianteEliminado = estudiantes.shift();
+estudiantes.unshift({ nombre: "Ana", edad: 19 });
+
+console.log("Estudiante eliminado:", estudianteEliminado);
+console.log("Array de estudiantes resultante:", estudiantes);
+Ejercicio 5: Juego de palabras
+Crea un programa que realice lo siguiente:
+
+Declara un array con 5 palabras.
+Usa shift() para eliminar la primera palabra y mostrarla.
+Usa unshift() para agregar una nueva palabra al principio del array.
+Repite los pasos 2 y 3 dos veces más y muestra el array después de cada operación.
+javascript
+
+Verify
+Edit
+Copy code
+// Tu código aquí
+let palabras = ["gato", "perro", "pájaro", "pez", "conejo"];
+
+for (let i = 0; i < 3; i++) {
+    let palabraEliminada = palabras.shift();
+    console.log("Palabra eliminada:", palabraEliminada);
+    palabras.unshift("nuevaPalabra" + (i + 1));
+    console.log("Array de palabras:", palabras);
+}
+Estos ejercicios te ayudarán a familiarizarte con los métodos shift() y unshift() en JavaScript. ¡Diviértete programando!

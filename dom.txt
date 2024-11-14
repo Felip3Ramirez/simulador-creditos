@@ -1,0 +1,10 @@
+El DOM, o Document Object Model, es una interfaz de programación que permite a los lenguajes de programación, como JavaScript, interactuar con el contenido y la estructura de un documento HTML o XML.
+
+En términos simples, el DOM representa la página web como una jerarquía de nodos, donde cada elemento HTML (como <div>, <p>, <img>, etc.) es un nodo en este árbol. Esto permite a los desarrolladores acceder y manipular el contenido, la estructura y el estilo de la página de manera dinámica.
+
+Con JavaScript, puedes:
+
+Acceder a elementos del DOM utilizando métodos como getElementById, getElementsByClassName, o querySelector.
+Modificar el contenido de los elementos, cambiar estilos, añadir o eliminar nodos.
+Responder a eventos del usuario, como clics o desplazamientos, para crear interactividad en la página.
+En resumen, el DOM es fundamental para el desarrollo web moderno, ya que permite a los desarrolladores crear aplicaciones dinámicas y responder a las acciones del usuario en tiempo real.
