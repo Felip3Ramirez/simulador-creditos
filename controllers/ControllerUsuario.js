@@ -1,8 +1,14 @@
 import { usuarios } from "../models/ModelUsuario.js";
 
 export function login() {
+    var loginUsuario = document.getElementById("login-usuario").value;
+    var loginContraseña = document.getElementById("login-contrasena").value;
     console.log(usuarios);
-    usuarios.some();
+    usuarios.some(function(index){
+        if (loginUsuario==index.usuario && loginContraseña==index.contrasena) {
+            window.location.href = "/views/pages/ViewCredito.html"
+        }
+    });
     
 }
 
