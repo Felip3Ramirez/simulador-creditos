@@ -1,0 +1,22 @@
+{
+  "name": "simulador-creditos",
+  "version": "1.0.0",
+  "description": "Proyecro MVC con persistencia de datos en json-server.El proyecto se escribe con javaScript Vanilla y Node JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node",
+    "Js",
+    "JavaScript",
+    "HTMML",
+    "CSS",
+    "MVC"
+  ],
+  "author": "FelipeRamirez",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}

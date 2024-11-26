@@ -1,0 +1,27 @@
+En el contexto de programación y desarrollo web, los "verbos HTTP" (también conocidos como métodos HTTP) son acciones que se pueden realizar en los recursos de un servidor web. Los verbos HTTP más comunes son:
+
+GET: Se utiliza para solicitar datos de un servidor. No debe modificar el estado del recurso.
+
+POST: Se utiliza para enviar datos al servidor, como el envío de formularios. Generalmente, se utiliza para crear nuevos recursos.
+
+PUT: Se utiliza para actualizar un recurso existente en el servidor. Si el recurso no existe, puede crear uno nuevo.
+
+DELETE: Se utiliza para eliminar un recurso en el servidor.
+
+PATCH: Se utiliza para aplicar modificaciones parciales a un recurso existente.
+
+HEAD: Similar a GET, pero solo solicita los encabezados de respuesta, sin el cuerpo del recurso. Se utiliza para obtener metainformación.
+
+OPTIONS: Se utiliza para describir las opciones de comunicación para el recurso de destino, como qué métodos HTTP son soportados.
+
+CONNECT: Se utiliza para establecer un túnel a través de un servidor HTTP, a menudo usado para conexiones HTTPS.
+
+TRACE: Se utiliza para realizar una prueba de bucle de retorno en el camino de la solicitud al servidor.
+
+Estos métodos son fundamentales para la interacción con APIs RESTful y son esenciales para el desarrollo de aplicaciones web. Si necesitas más información sobre alguno de estos métodos o su uso, no dudes en preguntar.
+
+JSON:
+
+javascript
+objet
+notation

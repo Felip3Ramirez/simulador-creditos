@@ -17,6 +17,10 @@ body {
     /* height: 650px; */
 }
 
+form{
+    border: 1px solid black;
+}
+
 .login,
 .register {
     width: 50%;
@@ -31,6 +35,7 @@ body {
 #btnFormLogin,
 #btnFormRegister{
     cursor: pointer;
+    text-decoration: underline;
 }
 .login div,
 .register div {

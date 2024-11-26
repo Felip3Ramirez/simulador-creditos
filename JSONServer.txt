@@ -1,0 +1,173 @@
+!NODE JS¡
+
+
+
+
+JSON Server es una herramienta de desarrollo que permite crear una API RESTful de manera rápida y sencilla utilizando un archivo JSON como base de datos. Es particularmente útil para pruebas y desarrollo de aplicaciones front-end, ya que proporciona un entorno simulado para interactuar con datos sin necesidad de configurar un servidor backend completo.
+
+Características de JSON Server:
+Simplicidad: Puedes iniciar un servidor en cuestión de minutos con solo un archivo JSON que contenga tus datos.
+
+RESTful: Proporciona una API RESTful completa, lo que significa que puedes realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) utilizando los métodos HTTP (GET, POST, PUT, DELETE).
+
+Configuración mínima: Solo necesitas instalar JSON Server y proporcionar un archivo JSON. No se requiere configuración adicional.
+
+Soporte para consultas: Permite realizar consultas avanzadas, como filtrado, paginación y ordenamiento, directamente a través de la URL.
+
+Middleware: Puedes agregar middleware personalizado para extender la funcionalidad según tus necesidades.
+
+Cómo usar JSON Server:
+Instalación: Primero, necesitas tener Node.js y npm instalados. Luego, puedes instalar JSON Server usando npm:
+
+bash
+
+Verify
+
+Open In Editor
+Edit
+Copy code
+npm install -g json-server
+Crear un archivo JSON: Crea un archivo db.json con la estructura de tus datos. Por ejemplo:
+
+json
+
+Verify
+
+Open In Editor
+Edit
+Copy code
+{
+  "posts": [
+    { "id": 1, "title": "Post 1", "content": "Contenido del post 1" },
+    { "id": 2, "title": "Post 2", "content": "Contenido del post 2" }
+  ],
+  "comments": [
+    { "id": 1, "postId": 1, "content": "Comentario 1" },
+    { "id": 2, "postId": 2, "content": "Comentario 2" }
+  ]
+}
+Iniciar el servidor: Ejecuta el siguiente comando en la terminal:
+
+bash
+
+Verify
+
+Open In Editor
+Edit
+Copy code
+json-server --watch db.json
+Acceder a la API: Una vez que el servidor esté en funcionamiento, podrás acceder a tu API en http://localhost:3000. Por ejemplo, puedes hacer una solicitud GET a http://localhost:3000/posts para obtener todos los posts.
+
+Ejemplo de uso:
+GET: GET http://localhost:3000/posts - Obtiene todos los posts.
+POST: POST http://localhost:3000/posts - Crea un nuevo post.
+PUT: PUT http://localhost:3000/posts/1 - Actualiza el post con id 1.
+DELETE: DELETE http://localhost:3000/posts/1 - Elimina el post con id 1.
+JSON Server es una herramienta muy útil para desarrolladores que necesitan simular una API rápidamente durante el desarrollo de aplicaciones front-end.
+
+
+
+
+
+
+
+
+NPM:
+
+npm significa Node Package Manager. Es el gestor de paquetes por defecto para Node.js y se utiliza para instalar, compartir y gestionar dependencias de código en proyectos de JavaScript. Aquí hay un desglose más detallado de su significado y uso:
+
+Funciones de npm:
+Instalación de paquetes: npm permite a los desarrolladores instalar bibliotecas y herramientas que pueden ser utilizadas en sus aplicaciones. Por ejemplo, puedes instalar frameworks como Express, bibliotecas como Lodash, y muchas otras herramientas útiles.
+
+bash
+
+Verify
+
+Open In Editor
+Edit
+Copy code
+npm install nombre-del-paquete
+Gestión de dependencias: npm mantiene un registro de las dependencias de tu proyecto en un archivo llamado package.json. Este archivo contiene información sobre el proyecto, como su nombre, versión y las dependencias que necesita.
+
+Publicación de paquetes: Si has creado una biblioteca o herramienta que deseas compartir con otros desarrolladores, puedes publicarla en el registro de npm para que otros puedan instalarla.
+
+bash
+
+Verify
+
+Open In Editor
+Edit
+Copy code
+npm publish
+Scripts de automatización: npm permite definir scripts en el archivo package.json para automatizar tareas comunes, como ejecutar pruebas, iniciar un servidor o compilar código.
+
+json
+
+Verify
+
+Open In Editor
+Edit
+Copy code
+"scripts": {
+  "start": "node app.js",
+  "test": "mocha"
+}
+Luego puedes ejecutar estos scripts usando:
+
+bash
+
+Verify
+
+Open In Editor
+Edit
+Copy code
+npm run start
+Manejo de versiones: npm permite especificar versiones específicas de paquetes, lo que ayuda a evitar problemas de compatibilidad en el futuro.
+
+Cómo funciona npm:
+Registro de npm: npm tiene un registro en línea donde se almacenan miles de paquetes de código abierto. Cuando instalas un paquete, npm lo descarga de este registro.
+
+Archivo package.json: Este archivo es fundamental en cualquier proyecto que use npm. Contiene metadatos sobre el proyecto y una lista de las dependencias necesarias.
+
+Carpeta node_modules: Cuando instalas paquetes, npm crea una carpeta llamada node_modules en tu proyecto donde almacena todos los paquetes y sus dependencias.
+
+Ejemplo de uso de npm:
+Inicializar un nuevo proyecto:
+
+bash
+
+Verify
+
+Open In Editor
+Edit
+Copy code
+npm init
+Esto te guiará a través de la creación de un archivo package.json.
+
+Instalar un paquete:
+
+bash
+
+Verify
+
+Open In Editor
+Edit
+Copy code
+npm install express
+Esto instalará el framework Express y lo añadirá a las dependencias de tu proyecto en package.json.
+
+Ejecutar un script:
+
+bash
+
+Verify
+
+Open In Editor
+Edit
+Copy code
+npm run start
+En resumen, npm es una herramienta esencial para cualquier desarrollador que trabaje con Node.js, ya que facilita la gestión de bibliotecas y dependencias, así como la automatización de tareas en el desarrollo de aplicaciones.
+
+
+
+
