@@ -1,0 +1,32 @@
+
+Quiz estados de respuesta HTTP en febrero
+
+Los códigos de estado HTTP son respuestas que un servidor web envía al cliente (como un navegador) para indicar el resultado de una solicitud. Los códigos se dividen en varias categorías, cada una representando un tipo de respuesta. Aquí tienes un resumen de las categorías y algunos de los códigos más comunes:
+
+1xx: Respuestas informativas
+100 Continue: El cliente debe continuar con la solicitud.
+101 Switching Protocols: El servidor acepta cambiar a otro protocolo.
+
+2xx: Respuestas exitosas
+200 OK: La solicitud ha tenido éxito.
+201 Created: La solicitud ha sido cumplida y se ha creado un nuevo recurso.
+204 No Content: La solicitud se ha completado, pero no hay contenido para enviar en la respuesta.
+
+3xx: Redirecciones
+301 Moved Permanently: El recurso solicitado ha sido movido permanentemente a una nueva URL.
+302 Found: El recurso solicitado se ha encontrado temporalmente en una URL diferente.
+304 Not Modified: El recurso no ha sido modificado desde la última solicitud.
+
+4xx: Errores del cliente
+400 Bad Request: La solicitud no se puede entender o está mal formada.
+401 Unauthorized: Se requiere autenticación para acceder al recurso.
+403 Forbidden: El servidor entiende la solicitud, pero se niega a autorizarla.
+404 Not Found: El recurso solicitado no se encuentra en el servidor.
+
+5xx: Errores del servidor
+500 Internal Server Error: Se ha producido un error inesperado en el servidor.
+502 Bad Gateway: El servidor actuó como puerta de enlace y recibió una respuesta inválida de un servidor upstream.
+503 Service Unavailable: El servidor no está disponible temporalmente, generalmente debido a sobrecarga o mantenimiento.
+
+
+Estos son solo algunos ejemplos de códigos de estado HTTP. Hay muchos más, pero estos son los más comunes y útiles para el desarrollo web y la depuración.
