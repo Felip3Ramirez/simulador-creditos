@@ -10,10 +10,20 @@
       "id": "adf8798ad"
     },
     {
-      "id": "50ca"
+      "id": "78ygeuwhd",
+      "nombre": "yerepepe",
+      "correo": "pepe@correo.com",
+      "contrasena": "Yere369*",
+      "confirmar": "Yere369*",
+      "usuario": "YARA"
     },
     {
-      "id": "eafc"
+      "id": "aee0",
+      "nombre": "MANU",
+      "usuario": "manu",
+      "correo": "manu@correo.com",
+      "contrasena": "Manu123*",
+      "confirmar": "Manu123*"
     }
   ]
 }

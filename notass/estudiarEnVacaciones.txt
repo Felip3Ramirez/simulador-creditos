@@ -1,0 +1,53 @@
+Programacion asincrona:  front2: que es un callback y un callstack y promesa
+
+La programación asíncrona es un paradigma que permite a un programa ejecutar tareas sin bloquear su flujo principal. Esto es especialmente útil en operaciones de entrada/salida, donde el programa puede continuar trabajando en otras tareas mientras espera que se completen ciertas operaciones. Utiliza conceptos como callbacks, promesas y funciones async/await para manejar la ejecución de código de manera más eficiente.
+
+Conceptos Clave de la Programación Asíncrona
+
+Callbacks:
+
+Funciones que se pasan como argumentos a otras funciones y se ejecutan después de que se completa una tarea.
+Permiten que el programa continúe ejecutándose mientras espera que se complete una operación.
+Promesas:
+
+Objetos que representan un valor que puede estar disponible ahora, o en el futuro, o nunca.
+Proporcionan métodos como .then() y .catch() para manejar resultados y errores de manera más clara que los callbacks.
+Funciones Async/Await:
+
+Las funciones marcadas con async devuelven automáticamente una promesa.
+La palabra clave await se utiliza dentro de estas funciones para esperar a que una promesa se resuelva, lo que permite escribir código asíncrono de manera más legible y similar al código síncrono.
+Ventajas de la Programación Asíncrona
+
+No Bloqueante:
+
+Permite que el programa siga ejecutándose mientras espera que se completen tareas largas, como solicitudes de red o lecturas de archivos.
+Manejo de Errores Simplificado:
+
+Las promesas y las funciones async/await facilitan la captura y el manejo de errores, evitando el "callback hell" que puede surgir con múltiples callbacks anidados.
+Mejor Rendimiento:
+
+Al permitir que múltiples operaciones se realicen simultáneamente, se puede mejorar la eficiencia general del programa.
+Ejemplo de Código
+
+Aquí hay un ejemplo de cómo se puede utilizar la programación asíncrona en JavaScript:
+
+javascript
+Insert Code
+Edit
+Copy code
+async function obtenerDatos(url) {
+  try {
+    let respuesta = await fetch(url);
+    if (!respuesta.ok) throw new Error('Error en la red');
+    let datos = await respuesta.json();
+    return datos;
+  } catch (error) {
+    console.error('Error:', error);
+  }
+}
+
+obtenerDatos('https://api.example.com/datos')
+  .then(datos => console.log(datos));
+Conclusión
+
+La programación asíncrona es una herramienta poderosa en JavaScript que permite a los desarrolladores crear aplicaciones más rápidas y eficientes. Al comprender y utilizar callbacks, promesas y funciones async/await, se puede manejar la ejecución de código de manera más efectiva, mejorando la experiencia del usuario y el rendimiento de la aplicación.
